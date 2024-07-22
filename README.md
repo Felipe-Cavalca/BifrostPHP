@@ -11,61 +11,130 @@
 
 ## English
 
-Base repository for my project to maintain standardization of licenses, inssues, actions, etc.
+Bifrost is a PHP framework with a basis for web development
 
-### Useful links
+## Description
 
-* `.github`
-  * [ISSUE_TEMPLATES](.github/ISSUE_TEMPLATE/)
-    * [bug-report.md](.github/ISSUE_TEMPLATE/bug-report.md)
-    * [enhancement-request.md](.github/ISSUE_TEMPLATE/enhancement-request.md)
-  * [workflows](.github/workflows/)
-    * [merge_branch_on_release.yml](.github/workflows/merge_branch_on_release.yml)
-    * [tag_on_merge.yml](.github/workflows/tag_on_merge.yml)
-  * [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md)
-  * [CONTRIBUTING.md](.github/CONTRIBUTING.md)
-  * [FUNDING.yml](.github/FUNDING.yml)
-  * [labels.yml](.github/labels.yml)
-  * [PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md)
-  * [release-drafter.yml](.github/release-drafter.yml)
-* [.vscode](.vscode/)
-  * [extensions.json](.vscode/extensions.json)
-  * [tasks.json](.vscode/tasks.json)
-* [LICENSE](LICENSE)
-* [README.md](README.md)
-* [SECURITY.md](SECURITY.md)
+This repository contains a `tasks.json` file inside the `.vscode` folder, which defines tasks to pull repositories with `API`, `APP`, `Banco` scripts and others.
 
-### Versions
+## Requirements
 
-[https://github.com/Felipe-Cavalca/base-repo/releases](https://github.com/Felipe-Cavalca/base-repo/releases)
+* Git
+*Docker
+* Docker Compose
+* Visual Studio Code (VS Code)
 
-## Português
+## Installation
 
-Repositório base do meu projeto para manter padronização de licenças, questões, ações, etc.
+1. Clone the repository:
 
-### Links úteis
+    ```sh
+    git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
+    cd BifrostPHP
+    ```
 
-* `.github`
-  * [ISSUE_TEMPLATES](.github/ISSUE_TEMPLATE/)
-    * [bug-report.md](.github/ISSUE_TEMPLATE/bug-report.md)
-    * [enhancement-request.md](.github/ISSUE_TEMPLATE/enhancement-request.md)
-  * [workflows](.github/workflows/)
-    * [merge_branch_on_release.yml](.github/workflows/merge_branch_on_release.yml)
-    * [tag_on_merge.yml](.github/workflows/tag_on_merge.yml)
-  * [CODE_OF_CONDUCT.md](.github/CODE_OF_CONDUCT.md)
-  * [CONTRIBUTING.md](.github/CONTRIBUTING.md)
-  * [FUNDING.yml](.github/FUNDING.yml)
-  * [labels.yml](.github/labels.yml)
-  * [PULL_REQUEST_TEMPLATE.md](.github/PULL_REQUEST_TEMPLATE.md)
-  * [release-drafter.yml](.github/release-drafter.yml)
-* [.vscode](.vscode/)
-  * [extensions.json](.vscode/extensions.json)
-  * [tasks.json](.vscode/tasks.json)
-* [LICENSE](LICENSE)
-* [README.md](README.md)
-* [SECURITY.md](SECURITY.md)
+2. Open the project in Visual Studio Code:
 
-### Versões
+    ```sh
+    code .
+    ```
 
-Links para as releases do projeto:
-[https://github.com/Felipe-Cavalca/base-repo/releases](https://github.com/Felipe-Cavalca/base-repo/releases)
+3. In VS Code, open the built-in terminal and run the tasks defined in `tasks.json` to pull the scripts from the required repositories:
+    * In the menu, go to **Terminal > Run Task...**
+    * Select the desired task to perform.
+
+4. Build and start Docker containers:
+
+    ```sh
+    docker-compose up --build -d
+    ```
+
+## Contributions
+
+Contributions are welcome! Please follow the steps below to contribute:
+
+1. Fork the project.
+2. Create a new branch:
+
+    ```sh
+    git checkout -b my-feature
+    ```
+
+3. Make your changes and commit:
+
+    ```sh
+    git commit -m 'My new feature'
+    ```
+
+4. Upload to remote repository:
+
+    ```sh
+    git push origin my-feature
+    ```
+
+5. Open a Pull Request.
+
+## português
+
+Bifrost é um framework em PHP com uma base para o desenvolvimento web
+
+## Descrição
+
+Este repositório contém um arquivo `tasks.json` dentro da pasta `.vscode`, que define tarefas para puxar os repositórios com os scripts de `API`, `APP`, `Banco` entre outros.
+
+## Requisitos
+
+* Git
+* Docker
+* Docker Compose
+* Visual Studio Code (VS Code)
+
+## Instalação
+
+1. Clone o repositório:
+
+    ```sh
+    git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
+    cd BifrostPHP
+    ```
+
+2. Abra o projeto no Visual Studio Code:
+
+    ```sh
+    code .
+    ```
+
+3. No VS Code, abra o terminal integrado e execute as tarefas definidas no `tasks.json` para puxar os scripts dos repositórios necessários:
+    * No menu, vá para **Terminal > Run Task...**
+    * Selecione a tarefa desejada para executar.
+
+4. Construa e inicie os containers Docker:
+
+    ```sh
+    docker-compose up --build -d
+    ```
+
+## Contribuições
+
+Contribuições são bem-vindas! Por favor, siga os passos abaixo para contribuir:
+
+1. Faça um fork do projeto.
+2. Crie uma nova branch:
+
+    ```sh
+    git checkout -b minha-feature
+    ```
+
+3. Faça suas modificações e commit:
+
+    ```sh
+    git commit -m 'Minha nova feature'
+    ```
+
+4. Envie para o repositório remoto:
+
+    ```sh
+    git push origin minha-feature
+    ```
+
+5. Abra um Pull Request.
