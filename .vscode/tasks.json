@@ -14,6 +14,19 @@
             }
         },
 
+        // Puxa Bifrost
+        {
+            "label": "Puxar BifrostPHP",
+            "type": "shell",
+            "problemMatcher": [],
+            "windows": {
+                "command": "if (git remote | findstr 'bifrostPHP') { git remote set-url bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git } else { git remote add bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git }; git fetch bifrostPHP; git merge bifrostPHP/latest-release --allow-unrelated-histories"
+            },
+            "linux": {
+                "command": "git remote | grep bifrostPHP && git remote set-url bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git || git remote add bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git; git fetch bifrostPHP && git merge bifrostPHP/latest-release --allow-unrelated-histories"
+            }
+        },
+
         // Puxa APP
         {
             "label": "Puxar APP",
