@@ -1,134 +1,132 @@
-# 📦 Base Repo Template
+# 🧱 BifrostPHP - Base Repository
 
-> 🧰 Modelo base para repositórios com padronizações e boas práticas, como templates de issues, workflows, licenças e mais.
 ---
 
 ## English
 
-Bifrost is a PHP framework with a basis for web development
+### 📌 Overview
 
-## Description
+**BifrostPHP** is a lightweight PHP framework template designed to accelerate web development, offering a simple structure and automation tools for common tasks.
 
-This repository contains a `tasks.json` file inside the `.vscode` folder, which defines tasks to pull repositories with `API`, `APP`, `Banco` scripts and others.
+### 📁 Project Structure
 
-## Requirements
+This repository includes a `.vscode/tasks.json` file that automates pulling dependencies (e.g., `API`, `APP`, `Database`, etc.) from other repositories.
 
-* Git
-*Docker
-* Docker Compose
-* Visual Studio Code (VS Code)
+### ✅ Requirements
 
-## Installation
+ - Git
+ - Docker
+ - Docker Compose
+ - Visual Studio Code (VS Code)
+
+### 🚀 Getting Started
 
 1. Clone the repository:
+```bash
+git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
+cd BifrostPHP
+```
 
-    ```sh
-    git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
-    cd BifrostPHP
-    ```
+2. Open the project in VS Code:
+```bash
+code .
+```
 
-2. Open the project in Visual Studio Code:
+3. Run tasks to pull dependencies:
+    - Go to Terminal > Run Task...
+    - Choose one of the available tasks in tasks.json
 
-    ```sh
-    code .
-    ```
+4. Start Docker containers:
+```bash
+docker-compose up --build -d
+```
 
-3. In VS Code, open the built-in terminal and run the tasks defined in `tasks.json` to pull the scripts from the required repositories:
-    * In the menu, go to **Terminal > Run Task...**
-    * Select the desired task to perform.
+### 🤝 Contributing
+We welcome contributions! Follow these steps:
 
-4. Build and start Docker containers:
+1. Fork this repo
 
-    ```sh
-    docker-compose up --build -d
-    ```
+2. Create a feature branch:
+```bash
+git checkout -b my-feature
+```
 
-## Contributions
+3. Commit your changes:
+```bash
+git commit -m "feat: add new feature"
+```
 
-Contributions are welcome! Please follow the steps below to contribute:
+4. Push to origin:
+```bash
+git push origin my-feature
+```
 
-1. Fork the project.
-2. Create a new branch:
+5. Open a Pull Request
 
-    ```sh
-    git checkout -b my-feature
-    ```
+---
 
-3. Make your changes and commit:
+## Português
 
-    ```sh
-    git commit -m 'My new feature'
-    ```
+### 📌 Visão Geral
 
-4. Upload to remote repository:
+**BifrostPHP** é um template de framework PHP criado para acelerar o desenvolvimento web, oferecendo uma estrutura simples e automações para tarefas comuns.
 
-    ```sh
-    git push origin my-feature
-    ```
+### 📁 Estrutura do Projeto
 
-5. Open a Pull Request.
+Este repositório inclui o arquivo `.vscode/tasks.json`, que automatiza o processo de puxar dependências (como `API`, `APP`, `Banco` e outros).
 
-## português
+### ✅ Requisitos
 
-Bifrost é um framework em PHP com uma base para o desenvolvimento web
+ - Git
+ - Docker
+ - Docker Compose
+ - Visual Studio Code (VS Code)
 
-## Descrição
-
-Este repositório contém um arquivo `tasks.json` dentro da pasta `.vscode`, que define tarefas para puxar os repositórios com os scripts de `API`, `APP`, `Banco` entre outros.
-
-## Requisitos
-
-* Git
-* Docker
-* Docker Compose
-* Visual Studio Code (VS Code)
-
-## Instalação
+### 🚀 Primeiros Passos
 
 1. Clone o repositório:
+```bash
+git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
+cd BifrostPHP
+```
 
-    ```sh
-    git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
-    cd BifrostPHP
-    ```
+2. Abra o projeto no VS Code:
+```bash
+code .
+```
 
-2. Abra o projeto no Visual Studio Code:
+3. Execute as tarefas do `tasks.json`:
+    - Vá em Terminal > Executar Tarefa...
+    - Escolha uma das tarefas disponíveis
 
-    ```sh
-    code .
-    ```
+4. Inicie os containers Docker:
+```bash
+docker-compose up --build -d
+```
 
-3. No VS Code, abra o terminal integrado e execute as tarefas definidas no `tasks.json` para puxar os scripts dos repositórios necessários:
-    * No menu, vá para **Terminal > Run Task...**
-    * Selecione a tarefa desejada para executar.
+### 🤝 Contribuindo
 
-4. Construa e inicie os containers Docker:
+Contribuições são bem-vindas! Siga os passos:
 
-    ```sh
-    docker-compose up --build -d
-    ```
+1. Faça um fork deste repositório
 
-## Contribuições
+2. Crie uma branch para sua feature:
+```bash
+git checkout -b minha-feature
+```
 
-Contribuições são bem-vindas! Por favor, siga os passos abaixo para contribuir:
-
-1. Faça um fork do projeto.
-2. Crie uma nova branch:
-
-    ```sh
-    git checkout -b minha-feature
-    ```
-
-3. Faça suas modificações e commit:
-
-    ```sh
-    git commit -m 'Minha nova feature'
-    ```
+3. Faça os commits:
+```bash
+git commit -m "feat: adiciona nova funcionalidade"
+```
 
 4. Envie para o repositório remoto:
+```bash
+git push origin minha-feature
+```
 
-    ```sh
-    git push origin minha-feature
-    ```
+5. Abra um Pull Request
 
-5. Abra um Pull Request.
+---
+
+> 🔧 Simple and structured. Ready to build.
