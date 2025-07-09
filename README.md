@@ -1,13 +1,7 @@
-# base-repo
+# 📦 Base Repo Template
 
-[![link-repo-base](https://img.shields.io/badge/Repo-Base-blue)](./)
-
-[![GIT](https://img.shields.io/badge/GIT-orange)](./)
-[![MD](https://img.shields.io/badge/MD-darkblue)](./)
-[![YML](https://img.shields.io/badge/YML-darkblue)](./)
-
-[![link-readme-inglês](https://img.shields.io/badge/README-English/Inglês-red)](./README.md#english)
-[![link-readme-Portugês](https://img.shields.io/badge/README-Portuguese/Portugês-green)](./README.md#português)
+> 🧰 Modelo base para repositórios com padronizações e boas práticas, como templates de issues, workflows, licenças e mais.
+---
 
 ## English
 

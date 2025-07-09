@@ -1,9 +1,9 @@
 {
     "version": "2.0.0",
     "tasks": [
-        // Puxa base
+        // Scrips base
         {
-            "label": "Puxar base",
+            "label": "mesclar base/last-release com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {

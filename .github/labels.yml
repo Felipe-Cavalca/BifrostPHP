@@ -2,6 +2,10 @@
   color: d73a4a
   description: Something isn't working
 
+- name: deprecated
+  color: ff0000
+  description: This feature is deprecated and will be removed in the future
+
 - name: dependencies
   color: 0075ca
   description: Update dependencies at the latest version
@@ -49,3 +53,7 @@
 - name: wontfix
   color: 000000
   description: This will not be worked on
+
+- name: tests
+  color: 00fff2
+  description: test creation
