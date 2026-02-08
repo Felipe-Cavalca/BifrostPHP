@@ -8,10 +8,10 @@
             "type": "shell",
             "problemMatcher": [],
             "windows": {
-                "command": "if (git remote | findstr '.github') { git remote set-url base https://github.com/Felipe-Cavalca/.github.git } else { git remote add base https://github.com/Felipe-Cavalca/.github.git }; git fetch base; git merge base/latest-release --allow-unrelated-histories"
+                "command": "if (git remote | findstr 'github') { git remote set-url github https://github.com/Felipe-Cavalca/.github.git } else { git remote add github https://github.com/Felipe-Cavalca/.github.git }; git fetch github; git merge github/latest-release --allow-unrelated-histories"
             },
             "linux": {
-                "command": "git remote | grep .github && git remote set-url base https://github.com/Felipe-Cavalca/.github.git || git remote add base https://github.com/Felipe-Cavalca/.github.git; git fetch base && git merge base/latest-release --allow-unrelated-histories"
+                "command": "git remote | grep github && git remote set-url github https://github.com/Felipe-Cavalca/.github.git || git remote add github https://github.com/Felipe-Cavalca/.github.git; git fetch github && git merge github/latest-release --allow-unrelated-histories"
             }
         }
     ]
