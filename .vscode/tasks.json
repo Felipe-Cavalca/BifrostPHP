@@ -1,22 +1,23 @@
 {
     "version": "2.0.0",
     "tasks": [
-        // Scrips base
+
+        // Scrips .github
         {
-            "label": "mesclar base/last-release com a branch atual",
+            "label": "mesclar .github/last-release com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
-                "command": "if (git remote | findstr 'base') { git remote set-url base https://github.com/Felipe-Cavalca/base-repo.git } else { git remote add base https://github.com/Felipe-Cavalca/base-repo.git }; git fetch base; git merge base/latest-release --allow-unrelated-histories"
+                "command": "if (git remote | findstr 'github') { git remote set-url github https://github.com/Felipe-Cavalca/.github.git } else { git remote add github https://github.com/Felipe-Cavalca/.github.git }; git fetch github; git merge github/latest-release --allow-unrelated-histories"
             },
             "linux": {
-                "command": "git remote | grep base && git remote set-url base https://github.com/Felipe-Cavalca/base-repo.git || git remote add base https://github.com/Felipe-Cavalca/base-repo.git; git fetch base && git merge base/latest-release --allow-unrelated-histories"
+                "command": "git remote | grep github && git remote set-url github https://github.com/Felipe-Cavalca/.github.git || git remote add github https://github.com/Felipe-Cavalca/.github.git; git fetch github && git merge github/latest-release --allow-unrelated-histories"
             }
         },
 
         // Puxa Bifrost
         {
-            "label": "Puxar BifrostPHP",
+            "label": "Mesclar BifrostPHP com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
@@ -29,7 +30,7 @@
 
         // Puxa APP
         {
-            "label": "Puxar APP",
+            "label": "Mesclar APP com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
@@ -42,7 +43,7 @@
 
         // Puxa API
         {
-            "label": "Puxar API",
+            "label": "Mesclar API com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
@@ -55,7 +56,7 @@
 
         // Puxa database
         {
-            "label": "Puxar banco de dados",
+            "label": "Mesclar banco de dados com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
@@ -65,5 +66,6 @@
                 "command": "git remote | grep banco && git remote set-url banco https://github.com/Felipe-Cavalca/BifrostPHP-Database.git || git remote add banco https://github.com/Felipe-Cavalca/BifrostPHP-Database.git; git fetch banco && git merge banco/latest-release --allow-unrelated-histories"
             }
         }
+
     ]
 }
