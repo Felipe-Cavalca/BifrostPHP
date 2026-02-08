@@ -1,4 +1,4 @@
-name: Tag on merge
+name: Sync Labels
 
 on:
   pull_request:
