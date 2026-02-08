@@ -17,7 +17,7 @@
 
         // Puxa Bifrost
         {
-            "label": "Puxar BifrostPHP",
+            "label": "Mesclar BifrostPHP com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
@@ -30,7 +30,7 @@
 
         // Puxa APP
         {
-            "label": "Puxar APP",
+            "label": "Mesclar APP com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
@@ -43,7 +43,7 @@
 
         // Puxa API
         {
-            "label": "Puxar API",
+            "label": "Mesclar API com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
@@ -56,7 +56,7 @@
 
         // Puxa database
         {
-            "label": "Puxar banco de dados",
+            "label": "Mesclar banco de dados com a branch atual",
             "type": "shell",
             "problemMatcher": [],
             "windows": {
