@@ -1,4 +1,4 @@
-# 📦 Base Repo Template
+# 📦 .github Repository
 
 > 🧰 Modelo base para repositórios com padronizações e boas práticas, como templates de issues, workflows, licenças e mais.
 ---
@@ -21,7 +21,7 @@ It includes common files like:
 2. Or clone manually:
 
 ```bash
-git clone https://github.com/Felipe-Cavalca/base-repo.git
+git clone https://github.com/Felipe-Cavalca/.github.git
 ```
 
 ### 📁 Project Structure
@@ -43,7 +43,7 @@ SECURITY.md               # Security policy
 ```
 
 ### 📌 Versions
-[👉 Releases](https://github.com/Felipe-Cavalca/base-repo/releases)
+[👉 Releases](https://github.com/Felipe-Cavalca/.github/releases)
 
 ---
 
@@ -65,7 +65,7 @@ Clique em "Use this template" no GitHub
 
 Ou clone manualmente:
 ```bash
-git clone https://github.com/Felipe-Cavalca/base-repo.git
+git clone https://github.com/Felipe-Cavalca/.github.git
 ```
 
 ### 📁 Estrutura do Projeto
@@ -88,4 +88,4 @@ README.md                 # Este README
 
 ### 📌 Versões
 
-[👉 Releases no GitHub](https://github.com/Felipe-Cavalca/base-repo/releases)
+[👉 Releases no GitHub](https://github.com/Felipe-Cavalca/.github/releases)
