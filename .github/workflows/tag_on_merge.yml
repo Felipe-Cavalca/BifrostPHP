@@ -73,6 +73,20 @@ jobs:
 
             return newTag;
 
+      - name: Disparar workflows de publicação
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const newTag = '${{ steps.create_tag.outputs.new_tag }}';
+            await github.rest.repos.createDispatchEvent({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              event_type: 'tag-created',
+              client_payload: {
+                tag: newTag,
+              },
+            });
+
   update_release_draft:
     needs: create_tag_and_draft_release
     runs-on: ubuntu-latest
