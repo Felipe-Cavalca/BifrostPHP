@@ -1,4 +1,4 @@
-# 🧱 BifrostPHP - Base Repository
+# 🧱 Bifrost - Base Repository
 
 ---
 
@@ -6,7 +6,7 @@
 
 ### 📌 Overview
 
-**BifrostPHP** is a lightweight PHP framework template designed to accelerate web development, offering a simple structure and automation tools for common tasks.
+**Bifrost** is a lightweight PHP framework template designed to accelerate web development, offering a simple structure and automation tools for common tasks.
 
 ### 📁 Project Structure
 
@@ -23,8 +23,8 @@ This repository includes a `.vscode/tasks.json` file that automates pulling depe
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
-cd BifrostPHP
+git clone https://github.com/Felipe-Cavalca/Bifrost.git
+cd Bifrost
 ```
 
 2. Open the project in VS Code:
@@ -69,7 +69,7 @@ git push origin my-feature
 
 ### 📌 Visão Geral
 
-**BifrostPHP** é um template de framework PHP criado para acelerar o desenvolvimento web, oferecendo uma estrutura simples e automações para tarefas comuns.
+**Bifrost** é um template de framework PHP criado para acelerar o desenvolvimento web, oferecendo uma estrutura simples e automações para tarefas comuns.
 
 ### 📁 Estrutura do Projeto
 
@@ -86,8 +86,8 @@ Este repositório inclui o arquivo `.vscode/tasks.json`, que automatiza o proces
 
 1. Clone o repositório:
 ```bash
-git clone https://github.com/Felipe-Cavalca/BifrostPHP.git
-cd BifrostPHP
+git clone https://github.com/Felipe-Cavalca/Bifrost.git
+cd Bifrost
 ```
 
 2. Abra o projeto no VS Code:
