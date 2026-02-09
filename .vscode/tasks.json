@@ -2,68 +2,17 @@
     "version": "2.0.0",
     "tasks": [
 
-        // Scrips .github
+        // Mesclar repositório
         {
-            "label": "mesclar .github/last-release com a branch atual",
+            "label": "Mesclar repositório com a branch atual",
             "type": "shell",
             "problemMatcher": [],
+            "prompt": true,
             "windows": {
-                "command": "if (git remote | findstr 'github') { git remote set-url github https://github.com/Felipe-Cavalca/.github.git } else { git remote add github https://github.com/Felipe-Cavalca/.github.git }; git fetch github; git merge github/latest-release --allow-unrelated-histories"
+                "command": "powershell -Command \"$repo = Read-Host 'Nome do repositório'; $remotes = @{ 'github' = '.github'; 'Bifrost' = 'Bifrost'; 'Front' = 'Bifrost-Front'; 'api' = 'Bifrost-Back'; 'banco' = 'Bifrost-Database' }; if ($remotes.ContainsKey($repo)) { $repoName = $remotes[$repo]; if (git remote | findstr $repo) { git remote set-url $repo \\\"https://github.com/Felipe-Cavalca/$repoName.git\\\" } else { git remote add $repo \\\"https://github.com/Felipe-Cavalca/$repoName.git\\\" }; git fetch $repo; git merge $repo/latest-release --allow-unrelated-histories } else { Write-Host \\\"Repositório não encontrado\\\" }\""
             },
             "linux": {
-                "command": "git remote | grep github && git remote set-url github https://github.com/Felipe-Cavalca/.github.git || git remote add github https://github.com/Felipe-Cavalca/.github.git; git fetch github && git merge github/latest-release --allow-unrelated-histories"
-            }
-        },
-
-        // Puxa Bifrost
-        {
-            "label": "Mesclar BifrostPHP com a branch atual",
-            "type": "shell",
-            "problemMatcher": [],
-            "windows": {
-                "command": "if (git remote | findstr 'bifrostPHP') { git remote set-url bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git } else { git remote add bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git }; git fetch bifrostPHP; git merge bifrostPHP/latest-release --allow-unrelated-histories"
-            },
-            "linux": {
-                "command": "git remote | grep bifrostPHP && git remote set-url bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git || git remote add bifrostPHP https://github.com/Felipe-Cavalca/BifrostPHP.git; git fetch bifrostPHP && git merge bifrostPHP/latest-release --allow-unrelated-histories"
-            }
-        },
-
-        // Puxa APP
-        {
-            "label": "Mesclar APP com a branch atual",
-            "type": "shell",
-            "problemMatcher": [],
-            "windows": {
-                "command": "if (git remote | findstr 'app') { git remote set-url app https://github.com/Felipe-Cavalca/BifrostPHP-Front.git } else { git remote add app https://github.com/Felipe-Cavalca/BifrostPHP-Front.git }; git fetch app; git merge app/latest-release --allow-unrelated-histories"
-            },
-            "linux": {
-                "command": "git remote | grep app && git remote set-url app https://github.com/Felipe-Cavalca/BifrostPHP-Front.git || git remote add app https://github.com/Felipe-Cavalca/BifrostPHP-Front.git; git fetch app && git merge app/latest-release --allow-unrelated-histories"
-            }
-        },
-
-        // Puxa API
-        {
-            "label": "Mesclar API com a branch atual",
-            "type": "shell",
-            "problemMatcher": [],
-            "windows": {
-                "command": "if (git remote | findstr 'api') { git remote set-url api https://github.com/Felipe-Cavalca/BifrostPHP-Back.git } else { git remote add api https://github.com/Felipe-Cavalca/BifrostPHP-Back.git }; git fetch api; git merge api/latest-release --allow-unrelated-histories"
-            },
-            "linux": {
-                "command": "git remote | grep api && git remote set-url api https://github.com/Felipe-Cavalca/BifrostPHP-Back.git || git remote add api https://github.com/Felipe-Cavalca/BifrostPHP-Back.git; git fetch api && git merge api/latest-release --allow-unrelated-histories"
-            }
-        },
-
-        // Puxa database
-        {
-            "label": "Mesclar banco de dados com a branch atual",
-            "type": "shell",
-            "problemMatcher": [],
-            "windows": {
-                "command": "if (git remote | findstr 'banco') { git remote set-url banco https://github.com/Felipe-Cavalca/BifrostPHP-Database.git } else { git remote add banco https://github.com/Felipe-Cavalca/BifrostPHP-Database.git }; git fetch banco; git merge banco/latest-release --allow-unrelated-histories"
-            },
-            "linux": {
-                "command": "git remote | grep banco && git remote set-url banco https://github.com/Felipe-Cavalca/BifrostPHP-Database.git || git remote add banco https://github.com/Felipe-Cavalca/BifrostPHP-Database.git; git fetch banco && git merge banco/latest-release --allow-unrelated-histories"
+                "command": "read -p 'Nome do repositório: ' repo; case $repo in github) repoName='.github';; Bifrost) repoName='Bifrost';; Front) repoName='Bifrost-Front';; api) repoName='BifrostPHP-Back';; banco) repoName='BifrostPHP-Database';; *) echo 'Repositório não encontrado'; exit 1;; esac; git remote | grep $repo && git remote set-url $repo https://github.com/Felipe-Cavalca/$repoName.git || git remote add $repo https://github.com/Felipe-Cavalca/$repoName.git; git fetch $repo && git merge $repo/latest-release --allow-unrelated-histories"
             }
         }
 
